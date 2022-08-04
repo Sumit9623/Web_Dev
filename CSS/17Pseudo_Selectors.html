@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psuedo Selectors</title>
+</head>
+<style>
+    h3
+    {
+        font-size: 20px;
+        text-align: center;
+    }
+    .container
+    {
+        display: block;
+        width: 300px;
+        margin: auto;
+    }
+    input[type="text"]  /*it will select the input having type text*/
+    {
+        padding: 10px;
+        margin: 10px;
+        background-color: red;
+        font-size: 20px;
+    }
+    a[target="_blank"]
+    {
+        color: rgb(245, 112, 23);
+        font-size: 30px;
+    }
+
+
+    /* nth child selector */
+
+    /* li:nth-child(3)
+    {
+        color: blue;
+    } */
+    
+    /* li:nth-child(3n+1)
+    {
+        color: purple; 
+    } */
+
+    li:nth-child(odd)
+    {
+        color: red;
+    }
+
+    li :last-child
+    {
+        color: green;
+        background-color: cyan;
+    }
+
+    ul  :first-child
+    {
+        color: rgb(34, 31, 31);
+        background-color: rgb(2, 190, 33);
+    }
+</style>
+<body>
+    <h3>This is to understand the Psuedo selectors and nth Child Selector</h3>
+    <h3><a href="https://google.com" target="_blank"> Go to Google</a></h3>
+    <!-- target _blank will open link in new tab -->
+    <h3><a href="https://facebook.com" target="_self"> Go to Facebook</a></h3>
+    <div class="container">
+        <form action="" class="form">
+            <input type="text" placeholder="Enter Your Name">
+            <input type="password" placeholder="Enter a password">
+        </form>
+        <ul>
+            <li class="item" id="item1">item1</li>
+            <li class="item" id="item2">item2</li>
+            <li class="item" id="item3">item3</li>
+            <li class="item" id="item4">item4</li>
+            <li class="item" id="item5">item5</li>
+            <li class="item" id="item6">item6</li>
+            <li class="item" id="item7">item7</li>
+            <li class="item" id="item8">item8</li>
+            <li class="item" id="item9">item9</li>
+            <li class="item" id="item10">item10</li>
+        </ul>
+    </div>   
+</body>
+</html>

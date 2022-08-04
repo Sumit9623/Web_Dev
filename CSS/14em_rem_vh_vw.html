@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>re rem vh vw units</title>
+</head>
+<style>
+    html
+    {
+        font-size: 25px;
+    }
+    .container
+    {
+        background-color: aqua;
+        font-size: 10px;
+        height: 100vh;
+        width: 100%;
+    }
+    h3
+    {
+        text-align: center;
+    }
+    #first
+    {
+        font-size: 4em;  
+        /*em unit whch is multiple of parent size*/
+        /* ie if text size of container is 10px and we give size to any element in container  */
+        /* as 4 em the size of element is 40px */
+
+        padding: 3em;
+        /* padding will set as 3*font size */
+        /* padding=3*40=120px */
+        /* Note : it will not the multiple of parent padding it will mutltiply of element font size */
+    }
+    #second
+    {
+        font-size: 3rem; /*here the font size will 3 multiply of html font*/
+        padding: 3rem;   /*here the padding will 3 multiply of font size of html*/
+    }
+</style>
+<body>
+    <div class="container">
+        <h3 id="first">this is first heading</h3>
+        <h3 id="second">this is second heading</h3>
+        <h3 id="third">this is third heading</h3>
+    </div>
+</body>
+</html>

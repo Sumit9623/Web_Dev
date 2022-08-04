@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property in CSS</title>
+    
+    <style>
+        /*positions : Static (default) , absolute , relative , fixed , sticky*/
+
+        *{
+            box-sizing: border-box;
+        }
+        .container
+        {
+            height: 4000px;
+            border: 2px solid red;
+            background-color: rgb(207, 203, 203);
+        }
+        .box
+        {
+            display: inline-block;
+            border: 2px solid black;
+            width: 200px;
+            height: 200px;
+            margin: 4px;
+        }
+        #box3
+        {
+           /* position: relative;  */ /*It will move the object relative to previous position  and it will leave preavious space empty */
+           /* top : 30px;
+            right: 30px;*/
+
+
+            /* position: absolute;    it will move related to parent div and it will  not leave preavious space empty
+            top : 30px;
+            left: 30px; */
+
+
+             /*position: fixed;   
+            /* it will fix according to window size  and   remain  that positin even if we scroo*/
+            /*top: 240px;
+            right: 20px;*/ 
+
+
+            position: sticky;   /*When we scroll the block will stick at top*/
+            top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+    
+</body>
+</html>

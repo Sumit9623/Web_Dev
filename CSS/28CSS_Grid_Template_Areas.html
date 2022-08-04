@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Template Areas</title>
+</head>
+<style>
+    .container
+    {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-areas: 
+        'navbar navbar navbar navbar '
+        'body body body aside '
+        'footer footer footer aside'
+        'footer footer footer ...'
+    }
+    .item
+    {
+        background-color: red;
+        padding: 12px;
+    }
+
+    #navbar
+    {
+        grid-area: navbar;
+    }
+    #body
+    {
+        grid-area: body;
+    }
+    #aside
+    {
+        grid-area: aside;
+    }
+    #footer
+    {
+        grid-area: footer;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="item" id="navbar">
+            Home Facilities About us Contact 
+        </div>
+        <div class="item" id="body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque aliquid voluptatum delectus voluptatibus, quaerat accusamus explicabo aliquam, exercitationem possimus corrupti consequuntur labore, similique quis. Harum unde odio aperiam facere qui odit, perspiciatis ab in vitae molestias ad, totam corrupti consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eaque error, animi suscipit ad pariatur, dignissimos sed iste dolorum ducimus, placeat doloribus quia ab. Officiis, voluptatum. Sit placeat eaque, aliquam unde voluptas eos reiciendis. Incidunt, consequatur voluptas. Aperiam doloremque dicta quas sint mollitia dolor quasi in velit veniam tenetur dignissimos, quis, assumenda fuga atque cupiditate laudantium ipsum laborum odit dolores voluptatem? Sequi earum ad fuga, officiis excepturi rem reiciendis dolorum corporis dolores suscipit blanditiis commodi vero libero et quidem nihil. Placeat facilis in ducimus soluta optio rerum reiciendis laboriosam incidunt eum vel minus minima esse voluptate, labore eaque harum facere maxime, vitae neque iusto consequatur molestiae exercitationem dolorum eveniet? Deserunt, sunt beatae natus, impedit cum laudantium et aliquam officiis, dolore exercitationem eveniet architecto suscipit..
+        </div>
+        <div class="item" id="aside">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, doloribus reiciendis. Odit vel minima ab quis voluptatem quo ut amet!
+        </div>
+        <div class="item" id="footer">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, sit!
+        </div>
+        <!-- <div class="item">item-1</div>
+        <div class="item">item-2</div>
+        <div class="item">item-3</div>
+        <div class="item">item-4</div>
+        <div class="item">item-5</div>
+        <div class="item">item-6</div>
+        <div class="item">item-7</div>
+        <div class="item">item-8</div>
+        <div class="item">item-9</div>
+        <div class="item">item-10</div>
+        <div class="item">item-11</div>
+        <div class="item">item-12</div> -->
+    </div>
+    
+</body>
+</html>

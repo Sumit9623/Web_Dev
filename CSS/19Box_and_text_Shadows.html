@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box and Text Shadows </title>
+</head>
+<style>
+    .container
+    {
+        background-color: hotpink;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box
+    {
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 200px;
+        background-color: green;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 20px;
+
+        /* box-shadow: (offset x) (offset y) (blur radius) (spred radius) */
+        /* if we want shadow at bottom use postive values of offset x and offset y */
+        /* if we want shadow at top use negative values of offset x and offset y */
+        box-shadow: 0px 10px 10px black;
+
+        /* box-shadow: 0px 10px  rgb(245, 20, 20), 4px 4px blue; */
+        /* by using comma we can give multiple shadow at a time  */
+
+        /* box-shadow: inset 0px 10px 10px black;    */
+        /* inset will show  shadow at inner side of box */
+
+
+        text-shadow: 0px 7px 7px black;
+        /* it is same as box-shadow  */
+    }
+
+</style>
+<body>
+    <h2 style="text-align: center;">
+        This file is for box and text shadows
+    </h2>
+    <div class="container">
+        <div class="box" id="box1">
+            This is first Box
+        </div>
+        <div class="box" id="box2">
+            This is Second Box
+        </div>
+        <div class="box" id="box3">
+            This is Third box
+        </div>
+    </div>
+</body>
+</html>

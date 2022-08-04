@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variables / Costume Properties</title>
+</head>
+<style>
+    /* we can define variables with specific value and use where we need */
+    /* if we want to change value where we used variable we can done it by just changing the varible value */
+    /* it makes work easy (no need to change value at every place ) */
+
+    /* Note : the scope of variable is only limited for box where we declared */
+    /* to use variable any whare declare variable in root */
+
+    :root
+    {
+        --box-color: red;
+        --box-shadow: purple;
+        --max-width:300px;
+        --jnkll: black;
+    }
+    .box
+    {
+        width: var(--max-width);
+        height: 200px;
+        background-color: var(--box-color);
+        border: 1px solid black;
+        box-shadow: 10px 10px var(--box-shadow);
+        margin: 10px;
+        padding: 10px;
+        /* background-color: var(--jnkll); */
+    }
+    .container
+    {
+        display: flex;
+        
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    
+</body>
+</html>

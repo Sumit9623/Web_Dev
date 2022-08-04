@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes and Animations</title>
+</head>
+<style>
+    .container
+    {
+        font-size: 20px;
+        color: white;
+        display: flex;
+        background-color: aqua;
+    }
+    .box
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+        position: relative;
+
+        animation-name : sumit2;
+        animation-duration: 10s;   /*here s stand for seconds*/
+        animation-iteration-count: infinite;   /*we can enter any positive value*/
+        /* for continous iteration enter 'infinite' */
+        animation-timing-function: ease-in-out;
+
+        /* animation-fill-mode: forwards;   */
+        /* if animation mode is forward then end result will be in 'to' properties */
+        /* if animation mode is backword then end result will be in 'from' properties */
+        
+        /* animation-timing-function: ease-in; */
+        /* ease-in will do animation first fast and then slow at end */
+        /* ease-out will do animation first slow and then fast at end */
+        /* ease-in-out will do animation  fast at middle and  slow at first and last */
+
+        /* animation-delay: 2s; */
+        /* this will start the animatin after the 2 seconds */
+        /* animation: sumit1 2s ease-in 0s infinite ; */
+
+        /* animation-direction: reverse;  it will start animation from 'to' and ends at 'from' i.e. in reverse order */
+
+        /* animation short hand prorety */
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        
+    }
+
+    @keyframes sumit2 
+    {
+        0%    /*it will divide time in percecentage and according to that we can apply animations*/
+        {
+            top: 0px;  /*here 'relative' position of box going to change*/
+            left: 0px;
+        }
+        25%
+        {
+            top: 0px;
+            left: 400px;
+        }
+        50%
+        {
+            top: 400px;
+            left: 400px;
+        }
+        75%
+        {
+            top: 400px;
+            left: 0px;
+        }
+        100%
+        {
+            top: 0px;
+            left: 0px;
+        }
+    }
+
+    /* @keyframes sumit1 {
+        from
+        {
+            width: 200px;
+        }
+        to
+        {
+            width: 400px;
+        }
+    } */
+
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+            This is Box
+        </div>
+    </div>
+</body>
+</html>

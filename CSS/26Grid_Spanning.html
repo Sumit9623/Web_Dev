@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid Spanning</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .container
+    {
+        display: grid;
+        grid-template-columns: repeat(4,auto);
+        grid-column-gap: 20px;
+        grid-row-gap: 40px;
+
+        /* grid-template-rows: repeat(4,auto); */
+    }
+    .box
+    {
+        border: 1px solid black;
+        background-color: chartreuse;
+        /* margin: 4px; */
+        padding: 10px;
+    }
+
+    .container :first-child
+    {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+
+        /* short cut to write span */
+        /* grid-column: 1/span 2;
+        grid-row: 1/span 2;
+         */
+    }
+
+    .box:nth-child(12)
+    {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 4;
+        grid-row-end: 6;
+
+    }
+    .box:nth-child(10)
+    {
+        grid-row-start: 4;
+        grid-row-end: 7;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box">Item-1</div>
+        <div class="box">Item-2</div>
+        <div class="box">Item-3</div>
+        <div class="box">Item-4</div>
+        <div class="box">Item-5</div>
+        <div class="box">Item-6</div>
+        <div class="box">Item-7</div>
+        <div class="box">Item-8</div>
+        <div class="box">Item-9</div>
+        <div class="box">Item-10</div>
+        <div class="box">Item-11</div>
+        <div class="box">Item-12</div>
+        <div class="box">Item-13</div>
+        <div class="box">Item-14</div>
+        <div class="box">Item-15</div>
+        <div class="box">Item-16</div>
+        <div class="box">Item-17</div>
+        <div class="box">Item-18</div>
+        <div class="box">Item-19</div>
+        <div class="box">Item-20</div>
+    </div>
+</body>
+</html>

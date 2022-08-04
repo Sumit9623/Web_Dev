@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+</head>
+<style>
+    .box
+    {
+        text-align: center;
+        background-color: black;
+        font-size: 40px;
+        color: white;
+        display: none;
+    }
+    p{
+        font-size: 20px;
+        text-align: center;
+    }
+    @media only screen and (max-width:400px)  /*only screen is type of media queiry*/
+    {
+        #box1
+        {
+            display: block;
+            background-color: cyan;
+        }
+        #box2
+        {
+            display: block;
+            background-color: rgb(9, 158, 41);
+        }
+    }
+    @media only screen and (max-width:500px) and (min-width:400px) /*only screen is type of media queiry*/
+    {
+        #box2
+        {
+            display: block;
+            background-color: rgb(240, 170, 40);
+        }
+    }
+    @media only screen and (max-width:600px)  and (min-width:500px) /*only screen is type of media queiry*/
+    {
+        #box3
+        {
+            display: block;
+            background-color: rgb(51, 236, 66);
+        }
+    }
+    @media only screen and (min-width:600px) /*only screen is type of media queiry*/
+    {
+        #box4
+        {
+            display: block;
+            background-color: rgb(84, 52, 224);
+        }
+    }
+
+    /* other types of media queries
+    1) all: supports all type of media devises 
+    2) print: used for printers
+    3) screen : used for computer screen tablets etc
+    4) speech : used for screenreaders that "reads" the page out loud  */
+    
+</style>
+<body>
+</body>
+    <p>vary the width of device and see the changes</p>
+    <div class="box" id="box1">i am i phone</div>
+    <div class="box" id="box2">i am i pad</div>
+    <div class="box" id="box3">i am laptop</div>
+    <div class="box" id="box4">i am wide screen computer</div>
+</html>

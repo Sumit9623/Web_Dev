@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adavance Selectors in CSS</title>
+</head>
+<style>
+
+    /* if any p contained by li  contained by div  */
+    /* div li p
+    {
+        background-color: yellow;
+        font-size: 16px;
+        font-weight: 700px;
+    } */
+
+
+    /* if any p which is direct child of div */
+    /* div > p   /* > is used to select direct child
+                  here only direct paragraphs will selected insner paragraphs will not select
+    {
+        background-color: black;
+        color: white;
+    } */
+
+
+    /* if any p having previous sibling div */
+    div + p
+    {
+        /* here only that paragraph will selected which having previous sibling is div  */
+        background-color: rgb(231, 109, 9);
+        font-size: 20px;
+        
+    }
+</style>
+<body>
+    <h3>Advance Selectors in CSS</h3>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li> <p> this is inner paragraph </p></li>
+                <li>this is line element</li>
+            </ul>
+        </div>
+        <p>This is middle paragraph</p>
+    </div>
+    <p> This is OuterMost paragraph</p>
+</body>
+</html>

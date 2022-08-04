@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript String Functions</title>
+</head>
+<body>
+    <h1>Javascript String Functions</h1>
+
+    <h4>This toturial is for to study String Functions</h4>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus corrupti ipsa voluptatibus quasi quo unde totam rerum sequi perferendis, architecto accusamus veritatis? Dolorem quo tempora repellendus, laborum perspiciatis animi officiis?</p>
+
+    <h2>Please visit the console</h2>
+</body>
+<script>
+    var string = "This is a String";
+    console.log(string);
+    console.log(string.indexOf('is'));  // this gives first occursnce of given substring 
+
+    console.log(string.lastIndexOf('is'));   // this gives last occursnce of given substring 
+
+    console.log(string.slice(0,6));
+
+    console.log(string.slice(-10,12));   // it can take negative values of indices
+    console.log(string.substring(3,12)+"\n\n");  // it does not take negative values of indises 
+
+    var newstring = string.replace("String","Sumit");
+    console.log(newstring);
+    console.log(string+"\n\n");
+
+    console.log(string.toUpperCase());
+    console.log(string.toLowerCase());
+
+
+    console.log(newstring.concat(", Hello !!"));  // we can use + operator to concat;
+
+    var str = "       hjjmn         km    vbnv   "
+    console.log(str.trim());
+    console.log(str);
+
+
+    console.log(string[10]);
+    console.log(string.charAt(10))
+    console.log(string.charCodeAt(10));
+</script>
+</html>

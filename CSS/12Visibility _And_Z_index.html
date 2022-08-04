@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and Z index</title>
+    <style>
+        /*when two elements are overlap on each other due to position like absolute relative fixed and sticky
+          then the element having greture Z index will get overlap on other */ 
+        .box
+        {
+            display: inline-block;
+            border: 2px solid black;
+            width: 200px;
+            height: 200px;
+            margin: 4px;
+        }
+        #box1
+        {
+            background-color: red;
+            /* visibility: hidden; */  /*it will hide the element and left space empty*/
+            /* display: none; */    /*it will hide the element and does not left space empty*/
+        }
+        #box2
+        {
+            background-color: green;
+            z-index: 2;
+        }
+        #box3
+        {
+            background-color: blue;
+            position: relative;
+            top: 10px;
+            right: 70px;
+            z-index: 1;
+        }
+        #box4
+        {
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </div>
+    
+</body>
+</html>

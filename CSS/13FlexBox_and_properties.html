@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox and properties</title>
+    <style>
+        .container
+        {
+            width: 100%;
+            height: 600px;
+            display: flex;
+            border: 2px solid red;
+            background-color: rgb(196, 196, 196);
+            padding: 4px;
+            flex-wrap: wrap;
+            /* flex properties */
+            flex-direction: row;
+            /* 1) Flex direction  */
+                   /* row   (by default)    it will start filling items in row wise manner  */
+                   /* column                it will start filling items in column wise manner  */
+                   /* row reverse           it will start filling items in row wise manner but in reverse order*/  
+                   /* column reverse        it will start filling items in column wise manner but in reverse order*/
+
+             /* 2) flex wrap */
+                /* no wrap  : (by default) when we change the size of window element will not get wrap */
+                /* wrap :             when we change the size of window element will not get wrap     */
+                /* wrap-reverse :        it will wrap the elments in reverse order when we change the size of the window */
+
+            /* 3) flex flow  :   it will set the flex direction and flex wrap at time */
+                /* flex-flow: (flex direction) (flex wrap); */
+                /* it will save the no of lines  */
+
+            /* 4) justify content : */
+                /* center      :   it will set all elements at center */
+                /* space between   : it will set the element such that space between two element will remain equal */
+                /* space evenly   :    it will set the element such that space between two element and also between border and element will remain equal */
+                /* space around      : it will place element such that it will set equal space around element */
+
+             /* 5) align items  :  */
+                /* center     : it will set elements at center vertically */
+                /* flex start     : it will set elements at top vertically */
+                /* flex end     : it will set elements at bottom vertically */
+                /* stretch     : it will set evenly space vertically  */
+        }
+        .box
+        {
+            background-color: rgb(178, 121, 231);
+            border: 1px solid black;
+            margin: 10px;
+            padding: 10px;
+            width: 200px;
+            height: 100px;
+            flex-grow: 1;
+            
+            /* flex: 2 2 200px; */
+
+            /* flex properties of items or elements */
+
+            /* Note : these properties should given to individual  box using id not for class  */
+
+            /* 1) order : the elemnt having greture order will set at last ie element will set according to incresing oreder */
+
+            /* 2) flex grow    : it will set the width of element according to number(proportion) given when we increse the window size it will grow accordinglly */
+            /* negative numbers not allowed for flex grow */
+
+            /* 3) flex-shrink  :    it is same as flex grow only differece is it will reduce size of elements in proporsion when we decrese window size */
+
+            /* 4) flex basis  :     */
+            /* when flex direction is row it will control the flex width when we change window size */
+            /* when flex direction is column it will control the flex heigth  */
+
+            /* 5) flex  :   it is short hand to write flex grow , flex shrink, flex basis at a time  */
+                /* flex : (flex grow) (flex shrink) (flex basis) ;*/
+                /* eg    flex: 2 2 200px; */
+
+            /* 6) align self  : it will align element at start, end or at center */
+                    /* flex start       it will align element at start  */
+                    /* flex end       it will align element at start  */
+                    /* center       it will align element at center  */
+
+            
+
+        }
+        #box1
+        {
+            /* flex-grow: 4; */
+             /* order: 2; */
+            flex-shrink: 10;
+            align-self: flex-end;
+            flex-basis: 600px;
+        }
+        #box2
+        {
+             /* flex-grow: 6; */
+             /* flex-shrink: 3;  */
+             /* flex-basis: 400px ;  */
+             /* order: 10;  */
+             /* flex: 3 3 300px; */
+            align-self: flex-start;
+            flex-shrink: 5;
+         }
+         /*
+        #box3
+        { */
+            /* flex-basis: 160px; 
+            order: 1; 
+            align-self: center;  */
+            /* flex-grow: 10; */
+         /* }  */
+    </style>
+</head>
+<body>
+    <h1>FlexBox and Properties</h1>
+    <div class="container">
+        <div class="box" id="box1">First block</div>
+        <div class="box" id="box2">Second block</div>
+        <div class="box" id="box3">Third block</div>
+        <div class="box" >Third block</div>
+        <div class="box" >Third block</div>
+        <div class="box" >Third block</div>
+        <div class="box" >Third block</div>
+        <div class="box" >Third block</div>
+        <div class="box" >Third block</div>
+        <div class="box" >Third block</div>
+        <div class="box" >Third block</div>
+        <div class="box" >Third block</div>
+        <div class="box" >Third block</div>
+        <div class="box" >Third block</div>
+        <div class="box" >Third block</div>
+        <div class="box" >Third block</div>
+        <div class="box" >Third block</div>
+        <div class="box" >Third block</div>
+        <!-- <div class="box" id="box4">Fourth block</div>
+        <div class="box" id="box5">Fifth block</div>
+        <div class="box" id="box6">Sixth block</div>
+        <div class="box" id="box7">Seventh block</div> -->
+    </div>
+    
+</body>
+</html>

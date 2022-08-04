@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+
+<body>
+    <h2>Forms HTML Tutorials</h2>
+    <form action="backend.php">
+        <div>
+            <label for="name"> Name</label>
+            <input type="text" name="My Name" id="name" required>
+        </div>
+        <br>
+        <div>
+            <label for="rollno">Roll no</label>
+            <input type="number" name="My Roll no." id="rollno">
+        </div>
+        <br>
+        <div>
+            <label for="year">Year of Enginnering </label>
+            <select name="Year of Enginnering" id="year">
+                <option value="1st"> first</option>
+                <option value="2nd"> second</option>
+                <option value="3rd"> third</option>
+                <option value="4th"> fourth</option>
+            </select>
+            <label for="semester"> Semester</label>
+            <select name="semester" id="Semester">
+                <option value="1st">first</option>
+                <option value="2nd">second</option>
+                <option value="3rd">third</option>
+                <option value="4th">fourth</option>
+                <option value="5th">fifth</option>
+                <option value="6th">sixth</option>
+                <option value="7th">seventh</option>
+                <option value="8th">eighth</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            date of Birth: <input type="date" name="date of birth" required>
+        </div>
+        <br>
+        <div>
+            <label for="age"> Age </label>
+            <input type="number" name="age" id="age">
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" name="MyEmail" required>
+        </div>
+        <br>
+        <div>
+            Gender: <input type="radio" name="My gender"> male <input type="radio" name="My gender"> Female <input
+                type="radio" name="My gender">Other
+        </div>
+        <br>
+        <div>
+            <input type="checkbox" name="my eligibility" checked> Are you eligible? :
+        </div>
+        <br>
+        <div>
+            Your Comments
+            <br> <textarea name="Comments" id="" cols="100" rows="10"></textarea>
+        </div>
+        <div>
+            <input type="password" pattern="Sumit@9623" name="password" placeholder="Enter password here" id="password"
+                required>
+        </div>
+        <br>
+
+        <input type="reset" value="Reset now">
+        <input type="submit" value="Submit">
+        <br> <br>
+
+    </form>
+</body>
+
+</html>

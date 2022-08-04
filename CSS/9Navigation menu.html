@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navigation menu using HTML and CSS</title>
+    <style>
+        .navbar ul{
+            
+          
+            list-style-type: none;   /*this will remove the bullet points inlist*/
+            overflow: auto;         /* when we do the all left the list elments come
+                                     out of the parrent ie nav so to avoid that 
+                                     we write overflow auto*/
+                                        
+            margin: 6px 0px;
+        }
+        .navbar li{
+            float: left;
+            padding: 2px 16px;
+            font-size: 19px;
+            
+        }
+        .navbar{
+            background-color: black;
+            border-radius: 16px;
+            height: 40px ;
+            border: 1px solid black;
+        }
+        .navbar li a:hover
+        {
+            color: rgb(192, 189, 189);
+            text-decoration: underline;
+        }
+        .navbar li a
+        {
+            color: white;
+            cursor: pointer; 
+            text-decoration: none;
+        }
+        #navsearch
+        {
+            width: 220px;
+            float: right;
+            padding: 4px 26px;
+            margin-right: 40px;
+            border-radius: 7px;
+            height: 27px;
+        }
+    </style>
+</head>
+<body>
+    <h2>This wedsite is for to understand the navigation menu</h2>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="https://google.com">Home </a></li>
+                <li><a href="https://facebook.com">About US </a></li>
+                <li><a href="https://facebook.com">Facilities </a></li>
+                <li><a href="https://facebook.com">Contacts </a></li>
+                <input type="search" name="search" id="navsearch" placeholder="Search Here">
+            </ul>
+        </nav> 
+    </header>
+    
+</body>
+</html>
+
